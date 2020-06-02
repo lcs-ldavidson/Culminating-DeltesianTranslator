@@ -33,6 +33,16 @@ var consonantLower = [
     18 : "w",
     19 : "x",
     20 : "z",
+    21 : "b",
+    22 : "c",
+    23 : "d",
+    24 : "f",
+    25 : "g",
+    26 : "h",
+    27 : "j",
+    28 : "k",
+    29 : "l",
+    30 : "m",
 ]
 
 //create a dictionary for uppercase consonants
@@ -57,6 +67,16 @@ var consonantUpper = [
     18 : "W",
     19 : "X",
     20 : "Z",
+    21 : "B",
+    22 : "C",
+    23 : "D",
+    24 : "F",
+    25 : "G",
+    26 : "H",
+    27 : "J",
+    28 : "K",
+    29 : "L",
+    30 : "M",
 ]
 
 //create a dictionary for lowercase vowels
@@ -67,6 +87,18 @@ var vowelLower = [
     4 : "o",
     5 : "u",
     6 : "y",
+    7 : "a",
+    8 : "e",
+    9 : "i",
+    10 : "o",
+    11 : "u",
+    12 : "y",
+    13 : "a",
+    14 : "e",
+    15 : "i",
+    16 : "o",
+    17 : "u",
+    18 : "y",
 ]
 
 //create a dictionary for uppercase vowels
@@ -77,6 +109,18 @@ var vowelUpper = [
     4 : "O",
     5 : "U",
     6 : "Y",
+    7 : "A",
+    8 : "E",
+    9 : "I",
+    10 : "O",
+    11: "U",
+    12: "Y",
+    13 : "A",
+    14 : "E",
+    15 : "I",
+    16 : "O",
+    17 : "U",
+    18 : "Y",
 ]
 
 
