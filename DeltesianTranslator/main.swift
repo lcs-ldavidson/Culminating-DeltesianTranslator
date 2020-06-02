@@ -20,3 +20,29 @@ for character in inputTest {
 
 print("You have typed \(inputTest)")
 
+
+func translateFromEnglish(languageToTranslate: language, textToTranslate: String) -> String{
+    
+    var translatedText = ""
+    
+    for character in textToTranslate {
+        
+    }
+    
+    return translatedText
+    
+}
+
+func findKeyForCharacter(forCharacter targetCharacter: String, inDictionary dictionary: Dictionary <Int, String>) -> Int {
+    
+    var keyToReturn : Int = 69
+    
+    for i in 1...dictionary.count {
+        if dictionary[i] == targetCharacter {
+            keyToReturn = i
+        }
+    }
+    return keyToReturn
+}
+
+print(findKeyForCharacter(forCharacter: "g", inDictionary: consonantLower))
