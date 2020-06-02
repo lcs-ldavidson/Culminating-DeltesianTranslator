@@ -10,6 +10,8 @@ import Foundation
 
 
 //create a dictionary for lowercase consonants
+var puncuation = [1 : "."]
+
 var consonantLower = [
     1 : "b",
     2 : "c",
