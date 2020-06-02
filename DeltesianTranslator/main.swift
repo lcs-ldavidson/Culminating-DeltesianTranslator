@@ -20,17 +20,23 @@ for character in inputTest {
 
 print("You have typed \(inputTest)")
 
-
-func translateFromEnglish(languageToTranslate: language, textToTranslate: String) -> String{
+//function to translate from english to desired language
+func translateFromEnglish(languageToTranslateTo: language, textToTranslate: String) -> String{
     
+    //variables that will be needed
     var translatedText = ""
     var dictionaryToUse : Dictionary<Int, String>
     
+    //loop through each letter in the text
     for char in textToTranslate{
         var character : String = "\(char)"
-        var index = findKeyForCharacter(forCharacter: character, inDictionary: determineDictionary(forCharacter: character))
+        var alphabet = determineDictionary(forCharacter: character)
+        
+        //get the index of the letter
+        var index = findKeyForCharacter(forCharacter: character, inDictionary: alphabet)
     }
     
+    //return the new translated text
     return translatedText
     
 }
@@ -48,9 +54,7 @@ func findKeyForCharacter(forCharacter targetCharacter: String, inDictionary dict
     return keyToReturn
 }
 
-print(findKeyForCharacter(forCharacter: "g", inDictionary: consonantLower))
-
-
+//funtion to find out what dictionary to use for each letter
 func determineDictionary(forCharacter searchcharacter: String) -> Dictionary<Int, String> {
     var dictionaryToUse : Dictionary<Int, String> = puncuation
     
