@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C6E0AAEF2481DFEB002DA1EC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E0AAEE2481DFEB002DA1EC /* main.swift */; };
 		C6E0AAF6248299C0002DA1EC /* alphabetDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E0AAF5248299C0002DA1EC /* alphabetDictionary.swift */; };
+		C6E0AAF82485CEDC002DA1EC /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E0AAF72485CEDC002DA1EC /* Language.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		C6E0AAEB2481DFEB002DA1EC /* DeltesianTranslator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DeltesianTranslator; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E0AAEE2481DFEB002DA1EC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C6E0AAF5248299C0002DA1EC /* alphabetDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alphabetDictionary.swift; sourceTree = "<group>"; };
+		C6E0AAF72485CEDC002DA1EC /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				C6E0AAEE2481DFEB002DA1EC /* main.swift */,
 				C6E0AAF5248299C0002DA1EC /* alphabetDictionary.swift */,
+				C6E0AAF72485CEDC002DA1EC /* Language.swift */,
 			);
 			path = DeltesianTranslator;
 			sourceTree = "<group>";
@@ -123,6 +126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6E0AAF82485CEDC002DA1EC /* Language.swift in Sources */,
 				C6E0AAF6248299C0002DA1EC /* alphabetDictionary.swift in Sources */,
 				C6E0AAEF2481DFEB002DA1EC /* main.swift in Sources */,
 			);
