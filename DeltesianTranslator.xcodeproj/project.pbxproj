@@ -10,6 +10,7 @@
 		C6E0AAEF2481DFEB002DA1EC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E0AAEE2481DFEB002DA1EC /* main.swift */; };
 		C6E0AAFC2486C643002DA1EC /* languagesLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E0AAFB2486C643002DA1EC /* languagesLibrary.swift */; };
 		C6E0AAFE2486F440002DA1EC /* myFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E0AAFD2486F440002DA1EC /* myFunctions.swift */; };
+		C6E0AB002486FD4F002DA1EC /* ruleCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E0AAFF2486FD4F002DA1EC /* ruleCharts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		C6E0AAEE2481DFEB002DA1EC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C6E0AAFB2486C643002DA1EC /* languagesLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = languagesLibrary.swift; sourceTree = "<group>"; };
 		C6E0AAFD2486F440002DA1EC /* myFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFunctions.swift; sourceTree = "<group>"; };
+		C6E0AAFF2486FD4F002DA1EC /* ruleCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ruleCharts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				C6E0AAEE2481DFEB002DA1EC /* main.swift */,
 				C6E0AAFB2486C643002DA1EC /* languagesLibrary.swift */,
 				C6E0AAFD2486F440002DA1EC /* myFunctions.swift */,
+				C6E0AAFF2486FD4F002DA1EC /* ruleCharts.swift */,
 			);
 			path = DeltesianTranslator;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6E0AB002486FD4F002DA1EC /* ruleCharts.swift in Sources */,
 				C6E0AAFC2486C643002DA1EC /* languagesLibrary.swift in Sources */,
 				C6E0AAFE2486F440002DA1EC /* myFunctions.swift in Sources */,
 				C6E0AAEF2481DFEB002DA1EC /* main.swift in Sources */,

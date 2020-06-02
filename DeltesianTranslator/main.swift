@@ -9,7 +9,7 @@
 import Foundation
 
 
+var dwarvenLanguage = language(name: "Dwarven", dictionary: dwarvenRules)
 
-func translateToFantasy(text textToTranslate: String) {
-    
-}
+print(dwarvenLanguage.translateToFantasy("My name is Liam and I am a Dwarf that is singing and running and having a festive time."))
+
