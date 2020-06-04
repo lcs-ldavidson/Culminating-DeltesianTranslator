@@ -8,6 +8,7 @@
 
 import Foundation
 
+//default dictionary
 var punctuation = [1 : ""]
 
 //dictionary for lowercase consonants
@@ -126,6 +127,7 @@ var vowelLower = [
     24 : "y"
 ]
 
+//create a dictionary for uppercase vowels
 var vowelUpper = [
     1 : "A",
     2 : "E",

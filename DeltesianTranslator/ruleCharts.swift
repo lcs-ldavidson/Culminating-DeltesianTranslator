@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+//Dwarven rules
 var dwarvenRules = [
     "al " : "urm ",
     "ive " : "idar ",

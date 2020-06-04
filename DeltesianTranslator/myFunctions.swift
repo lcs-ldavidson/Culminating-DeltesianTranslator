@@ -33,6 +33,7 @@ extension Dictionary {
     }
 }
 
+//find what dictionary contains the given character
 func determineDictionary(forCharacter searchcharacter: String) -> Dictionary<Int, String> {
     var dictionaryToUse : Dictionary<Int, String> = punctuation
 
@@ -52,6 +53,7 @@ func determineDictionary(forCharacter searchcharacter: String) -> Dictionary<Int
     return dictionaryToUse
 }
 
+//determine what key in a shift dictionary has the corresponding character value
 func findKeyForCharacter(forCharacter targetCharacter: String, inDictionary dictionary: Dictionary <Int, String>) -> Int {
 
     var keyToReturn : Int = 69

@@ -23,7 +23,7 @@ class language {
         offsetValue = shiftValue
     }
     
-    //function to translate into the fantasy language
+    //function to shift letters by the given offset value
     func shiftText(_ textToTranslate: String) -> String {
 
         //variables that will be needed
@@ -65,6 +65,7 @@ class language {
 
     }
     
+    //apply the rules specified in the dictionary given
     func applyRules(toText text: String) -> String {
         var appliedText = text
         for u in 0...rules.count - 1{
@@ -73,22 +74,13 @@ class language {
         return appliedText
     }
     
-    
-    
-    
+    //use the shift and apply functions to translate the text to fantasy
     func translateToFantasy(_ text: String) -> String {
        return applyRules(toText: shiftText(text))
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
+    //perform the shift in reverse
     func shiftTextBack(_ textToTranslate: String) -> String {
 
         //variables that will be needed
@@ -130,6 +122,7 @@ class language {
 
     }
     
+    //perform apply in reverse
     func applyRulesBack(toText text: String) -> String {
         var appliedText = text
         for u in 0...rules.count - 1{
@@ -139,6 +132,7 @@ class language {
         return appliedText
     }
     
+    //use the reversed functions to translate back to English
     func translateToEnglish(_ text: String) -> String {
        return shiftTextBack(applyRulesBack(toText: text))
     }
