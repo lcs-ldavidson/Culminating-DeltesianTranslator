@@ -23,38 +23,48 @@ class language {
         offSetValue = shiftValue
     }
     
-    // function to translate a given string into the language
-    func translateToFantasy(_ text: String) -> String {
-        
-        var shiftedText : String = ""
-        
-        for e in text {
-            var char : String = "\(e)"
-            var dictionaryToUse = determineDictionary(forCharacter: char)
-            var index = findKeyForCharacter(forCharacter: char, inDictionary: dictionaryToUse)
-            var newIndexInt = index + offSetValue
-            
-            if dictionaryToUse != punctuation {
-                shiftedText += dictionaryToUse[newIndexInt]!
+    //function to translate into the fantasy language
+    func translateToFantasy(_ textToTranslate: String) -> String {
+
+        //variables that will be needed
+        var translatedText = ""
+        var dictionaryToUse = punctuation
+        var translateLetter : Bool = true
+
+        //loop through each letter in the text
+        for character in textToTranslate{
+
+            //set variables
+            var newChar : String = ""
+            var char : String = "\(character)"
+            dictionaryToUse = determineDictionary(forCharacter: char)
+
+            //determine if the character should be translated and if so, do it
+            if char == " " {
+                translateLetter = true
+                newChar = " "
+            } else if dictionaryToUse == punctuation {
+                newChar = char
             } else {
-                shiftedText += char
+                if translateLetter == true || dictionaryToUse == vowelLower || dictionaryToUse == vowelUpper {
+                    var index = findKeyForCharacter(forCharacter: char, inDictionary: dictionaryToUse)
+                    newChar = dictionaryToUse[index + 1]!
+                    translateLetter = false
+                } else {
+                    newChar = char
+                }
             }
-            
+
+            translatedText += newChar
+
         }
-        
-        //        var textToTranslate = text
-        //        var lowerCaseText = textToTranslate.lowercased()
-        //
-        //        for i in 0...(rules.count - 1){
-        //
-        //            lowerCaseText.replace(rules.getKeyAtIndex(i), with: rules.getValueAtIndex(i))
-        //        }
-        //
-        //        return lowerCaseText
-        
-        return shiftedText
-        
+
+
+        //return the new translated text
+        return translatedText
+
     }
+    
     
 }
 

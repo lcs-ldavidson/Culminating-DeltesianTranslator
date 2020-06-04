@@ -17,3 +17,5 @@ var testText = "When the small town of Ryvon is attacked by a force of savage un
 var translatedText = dwarvenLanguage.translateToFantasy(testText)
 
 print(translatedText)
+
+
