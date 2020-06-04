@@ -30,6 +30,10 @@ var dwarvenRules = [
     "y " : "org ",
     "less " : "grak ",
     "ment " : "xil ",
-    "ness " : "trag "
+    "ness " : "trag ",
+    "e " : "urg ",
+    " the " : " du'um ",
+    " a " : " da'kal ",
+    " I " : " D'tel "
 ]
 

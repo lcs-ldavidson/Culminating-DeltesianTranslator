@@ -25,20 +25,20 @@ class language {
     
     //function to shift letters by the given offset value
     func shiftText(_ textToTranslate: String) -> String {
-
+        
         //variables that will be needed
         var shiftedText = ""
         var dictionaryToUse = punctuation
         var translateLetter : Bool = true
-
+        
         //loop through each letter in the text
         for character in textToTranslate{
-
+            
             //set variables
             var newChar : String = ""
             var char : String = "\(character)"
             dictionaryToUse = determineDictionary(forCharacter: char)
-
+            
             //determine if the character should be translated and if so, do it
             if char == " " {
                 translateLetter = true
@@ -54,21 +54,21 @@ class language {
                     newChar = char
                 }
             }
-
+            
             shiftedText += newChar
-
+            
         }
-
-
+        
+        
         //return the new translated text
         return shiftedText
-
+        
     }
     
     //apply the rules specified in the dictionary given
     func applyRules(toText text: String) -> String {
         var appliedText = text
-        for u in 0...rules.count - 1{
+        for u in 0...rules.count - 1 {
             appliedText.replace(self.shiftText(rules.getKeyAtIndex(u)), with: rules.getValueAtIndex(u))
         }
         return appliedText
@@ -76,26 +76,29 @@ class language {
     
     //use the shift and apply functions to translate the text to fantasy
     func translateToFantasy(_ text: String) -> String {
-       return applyRules(toText: shiftText(text))
+        
+        var attempt = applyRules(toText: shiftText(text))
+        return attempt
+        
     }
     
     
     //perform the shift in reverse
     func shiftTextBack(_ textToTranslate: String) -> String {
-
+        
         //variables that will be needed
         var shiftedText = ""
         var dictionaryToUse = punctuation
         var translateLetter : Bool = true
-
+        
         //loop through each letter in the text
         for character in textToTranslate{
-
+            
             //set variables
             var newChar : String = ""
             var char : String = "\(character)"
             dictionaryToUse = determineDictionary(forCharacter: char)
-
+            
             //determine if the character should be translated and if so, do it
             if char == " " {
                 translateLetter = true
@@ -111,15 +114,15 @@ class language {
                     newChar = char
                 }
             }
-
+            
             shiftedText += newChar
-
+            
         }
-
-
+        
+        
         //return the new translated text
         return shiftedText
-
+        
     }
     
     //perform apply in reverse
@@ -134,7 +137,8 @@ class language {
     
     //use the reversed functions to translate back to English
     func translateToEnglish(_ text: String) -> String {
-       return shiftTextBack(applyRulesBack(toText: text))
+        var attemptEnglish = shiftTextBack(applyRulesBack(toText: text))
+        return attemptEnglish
     }
     
 }
