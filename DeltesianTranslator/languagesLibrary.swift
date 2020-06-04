@@ -25,30 +25,37 @@ class language {
     
     // function to translate a given string into the language
     func translateToFantasy(_ text: String) -> String {
-        var textToTranslate = text
-        var lowerCaseText = textToTranslate.lowercased()
         
-        for i in 0...(rules.count - 1){
+        var shiftedText : String = ""
+        
+        for e in text {
+            var char : String = "\(e)"
+            var dictionaryToUse = determineDictionary(forCharacter: char)
+            var index = findKeyForCharacter(forCharacter: char, inDictionary: dictionaryToUse)
+            var newIndexInt = index + offSetValue
             
-            lowerCaseText.replace(rules.getKeyAtIndex(i), with: rules.getValueAtIndex(i))
+            if dictionaryToUse != punctuation {
+                shiftedText += dictionaryToUse[newIndexInt]!
+            } else {
+                shiftedText += char
+            }
+            
         }
         
-        return lowerCaseText
+        //        var textToTranslate = text
+        //        var lowerCaseText = textToTranslate.lowercased()
+        //
+        //        for i in 0...(rules.count - 1){
+        //
+        //            lowerCaseText.replace(rules.getKeyAtIndex(i), with: rules.getValueAtIndex(i))
+        //        }
+        //
+        //        return lowerCaseText
+        
+        return shiftedText
         
     }
     
-    func translateToEnglish(_ text: String) -> String {
-        var textToTranslate = text
-        var lowerCaseText = textToTranslate.lowercased()
-        
-        for i in 0...(rules.count - 1){
-            var index = (rules.count-1) - i
-            lowerCaseText.replace(rules.getValueAtIndex(i), with: rules.getKeyAtIndex(i))
-        }
-        
-        return lowerCaseText
-        
-    }
 }
 
 

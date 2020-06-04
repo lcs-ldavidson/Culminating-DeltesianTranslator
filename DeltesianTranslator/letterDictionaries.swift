@@ -8,6 +8,8 @@
 
 import Foundation
 
+var punctuation = [1 : ""]
+
 //dictionary for lowercase consonants
 var consonantLower = [
     1 : "b",

@@ -11,11 +11,9 @@ import Foundation
 
 var dwarvenLanguage = language(name: "Dwarven", dictionary: dwarvenRules, shiftValue: 1)
 
-var testText = " Artemis donned a mottled green and brown cloak and took his longbow off the wall. He slung it across his back, strapped a quiver and a knife to his belt, and pulled on his boots. As he moved to the room, he caught sight of one of ? his hunting knives on the wall. It was balanced on two nails hammered into the wood. This was one of Artemis’s smaller knives; his father had given it to him when he was younger to skin game that they caught together. The blade was finely sharpened on one side, serrated on the back, and had a handle wrapped in torn cloth. "
+var testText = "When the small town of Ryvon is attacked by a force of savage undead, those not slaughtered are left suffering from a mysterious disease. The lucky few to escape the infection must now race to discover the nature of the disease and the origin of the creatures that brought it. The Archdruids - the magical religious leaders of the town - finally find the answer, but a boy and his father must decide if they are willing to risk the lives of everyone to save the person they love most."
 
 
 var translatedText = dwarvenLanguage.translateToFantasy(testText)
 
 print(translatedText)
-
-print(dwarvenLanguage.translateToEnglish(translatedText))

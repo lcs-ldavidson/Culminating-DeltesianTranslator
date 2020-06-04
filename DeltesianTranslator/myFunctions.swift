@@ -32,3 +32,35 @@ extension Dictionary {
         return self.keys[indexWithValue]
     }
 }
+
+func determineDictionary(forCharacter searchcharacter: String) -> Dictionary<Int, String> {
+    var dictionaryToUse : Dictionary<Int, String> = punctuation
+
+    if consonantLower.values.contains(searchcharacter) {
+        dictionaryToUse = consonantLower
+    }
+    if consonantUpper.values.contains(searchcharacter) {
+        dictionaryToUse = consonantUpper
+    }
+    if vowelLower.values.contains(searchcharacter) {
+        dictionaryToUse = vowelLower
+    }
+    if vowelUpper.values.contains(searchcharacter) {
+        dictionaryToUse = vowelUpper
+    }
+
+    return dictionaryToUse
+}
+
+func findKeyForCharacter(forCharacter targetCharacter: String, inDictionary dictionary: Dictionary <Int, String>) -> Int {
+
+    var keyToReturn : Int = 69
+
+    for i in 1...dictionary.count {
+        if dictionary[i] == targetCharacter {
+            keyToReturn = i
+            break
+        }
+    }
+    return keyToReturn
+}
