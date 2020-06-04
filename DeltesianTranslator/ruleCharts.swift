@@ -10,6 +10,26 @@ import Foundation
 
 
 var dwarvenRules = [
-    "" : "",
+    "al " : "urm ",
+    "ive " : "idar ",
+    "est " : "orgur ",
+    "ation " : "adur ",
+    "at " : "idald ",
+    "ed " : "aldur ",
+    "en " : "ur ",
+    "eous " : "odogur ",
+    "er " : "ud ",
+    "es " : "uldon ",
+    "ful " : "drak ",
+    "ial " : "ourd ",
+    "ble " : "gred ",
+    "ic " : "yr ",
+    "ing " : "ildur ",
+    "ion " : "ourg ",
+    "ious " : "ikrag ",
+    "y " : "org ",
+    "less " : "grak ",
+    "ment " : "xil ",
+    "ness " : "trag "
 ]
 
