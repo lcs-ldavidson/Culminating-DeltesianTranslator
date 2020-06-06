@@ -9,14 +9,11 @@
 import Foundation
 
 
-var dwarvenLanguage = language(name: "Dwarven", dictionary: dwarvenRules, shiftValue: 2)
+var elven = language(name: "Elven", dictionary: elvenRules, shiftValue: 3)
 
-var testText = "When the small town of Ryvon is attacked by a force of savage undead, those not slaughtered are left suffering from a mysterious disease. The lucky few to escape the infection must now race to discover the nature of the disease and the origin of the creatures that brought it. The Archdruids - the magical religious leaders of the town - finally find the answer, but a boy and his father must decide if they are willing to risk the lives of everyone to save the person they love most."
+var testText = "why is my helmet full of rock babies eating the last fish, I birthed that fish with my own two hands it was mine, man am I pissed at those rock babies, and then the rock babies grew up into caves which is wierd because now they are empty space but maybe it is symbolic of how when we grow we really just stretch and become hollow and meaningless inside mister snortgoblin was a chef who worked at the pringleton place fryery, a fast food restaurant at the American way mall. he sold a variety of fried foods, including sticks on a stick, fried mouse, and the largely popular pringleton place special fried oil. it tastes of oil and only oil. mister snortgoblin was happy to be employed"
 
+print(elven.translateToFantasy(testText))
 
-var translatedText = dwarvenLanguage.translateToFantasy(testText)
-
-print(translatedText)
-
-print(dwarvenLanguage.translateToEnglish(translatedText))
+print(elven.translateToEnglish(elven.translateToFantasy(testText)))
 
